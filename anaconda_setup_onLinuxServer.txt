@@ -1,0 +1,28 @@
+------------  url : https://kengchichang.com/post/conda-linux/   -----------------------------------------------------------
+
+1. Download latest anaconda bash script
+	file for linux os from 'repo.anconda.com/archive'
+	cd /tmp # download the file in tmp folder -- create folder if needed
+
+	wget https://repo.continuum.io/archive/Anaconda3-2018.12-Linux-x86_64.sh
+	curl -O https://repo.anaconda.com/archive/Anaconda3-2023.03-1-Linux-x86_64.sh
+
+2. Verify the integrity of the installer
+	sha256sum Anaconda3-2023.03-1-Linux-x86_64.sh
+
+3. Run the installer script and complete installation
+	bash Anaconda3-2023.03-1-Linux-x86_64.sh
+
+4. Once installation is complete, you’ll receive the following output:
+	...
+	installation finished.
+	Do you wish the installer to prepend the Anaconda3 install location
+	to PATH in your ~/.bashrc ? [yes|no]
+	[no] >>>   # type yes
+
+5. Activate installation
+	cd ~
+	source ~/.bashrc
+
+6. Test installation
+	conda list
